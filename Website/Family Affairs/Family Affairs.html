@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./(style) Family Affairs.css">
+</head>
+
+<body>
+    <p class="Title">Family Affairs Test!</p>
+    <div class="pages">
+        <div class="left">
+
+            <pre>(1) Do you have a big family?</pre>
+            <div class="T1">
+                <input type="radio" name="w1" id="opt1">
+                <label for="opt1" class="label1">
+                    <span onclick="Q1Yes()">YES</span>
+                </label>
+                <input type="radio" name="w1" id="opt2">
+                <label for="opt2" class="label2">
+                    <span onclick="Q1No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(2) Are your parents strict?</pre>
+            <div class="T2">
+                <input type="radio" name="w2" id="opt3">
+                <label for="opt3" class="label1">
+                    <span onclick="Q2Yes()">YES</span>
+                </label>
+                <input type="radio" name="w2" id="opt4">
+                <label for="opt4" class="label2">
+                    <span onclick="Q2No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(3) Have you ever lied to your parents?</pre>
+            <div class="T3">
+                <input type="radio" name="w3" id="opt5">
+                <label for="opt5" class="label1">
+                    <span  onclick="Q3Yes()"">YES</span>
+                </label>
+                <input type="radio" name="w3" id="opt6">
+                <label for="opt6" class="label2">
+                    <span onclick="Q3No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(4) Do your parents ever embarrass you?</pre>
+            <div class="T4">
+                <input type="radio" name="w4" id="opt7">
+                <label for="opt7" class="label1">
+                    <span onclick="Q4Yes()">YES</span>
+                </label>
+                <input type="radio" name="w4" id="opt8">
+                <label for="opt8" class="label2">
+                    <span onclick="Q4No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(5) Are your brothers and sisters annoying?</pre>
+            <div class="T5">
+                <input type="radio" name="w5" id="opt9">
+                <label for="opt9" class="label1">
+                    <span onclick="Q5Yes()">YES</span>
+                </label>
+                <input type="radio" name="w5" id="opt10">
+                <label for="opt10" class="label2">
+                    <span onclick="Q5No()">NO</span>
+                </label>
+            </div>
+        </div>
+    
+        <div class="right">
+            <pre>(6) Does someone in the family have a drug or alcohol problem?</pre>
+            <div class="T6">
+                <input type="radio" name="w6" id="opt11">
+                <label for="opt11" class="label1">
+                    <span onclick="Q6Yes()">YES</span>
+                </label>
+                <input type="radio" name="w6" id="opt12">
+                <label for="opt12" class="label2">
+                    <span onclick="Q6No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(7) Is someone in the family verbally abusive?</pre>
+            <div class="T7">
+                <input type="radio" name="w7" id="opt13">
+                <label for="opt13" class="label1">
+                    <span onclick="Q7Yes()">YES</span>
+                </label>
+                <input type="radio" name="w7" id="opt14">
+                <label for="opt14" class="label2">
+                    <span onclick="Q7No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(8) Is someone in the family physically abusive?</pre>
+            <div class="T8">
+                <input type="radio" name="w8" id="opt15">
+                <label for="opt15" class="label1">
+                    <span onclick="Q8Yes()">YES</span>
+                </label>
+                <input type="radio" name="w8" id="opt16">
+                <label for="opt16" class="label2">
+                    <span onclick="Q8No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(9) Has anyone in the family been reported to Child Protective Services?</pre>
+            <div class="T9">
+                <input type="radio" name="w9" id="opt17">
+                <label for="opt17" class="label1">
+                    <span onclick="Q9Yes()">YES</span>
+                </label>
+                <input type="radio" name="w9" id="opt18">
+                <label for="opt18" class="label2">
+                    <span onclick="Q9No()">NO</span>
+                </label>
+            </div>
+    
+            <pre>(10) Do the parents frequently argue in front of the children?</pre>
+            <div class="T10">
+                <input type="radio" name="w10" id="opt19">
+                <label for="opt19" class="label1">
+                    <span onclick="Q10Yes()">YES</span>
+                </label>
+                <input type="radio" name="w10" id="opt20">
+                <label for="opt20" class="label2">
+                    <span onclick="Q10No()">NO</span>
+                </label>
+            </div>
+        </div>
+    
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="T11">
+            <button onclick="print()" class="button-64" role="button"><span class="text">Submit</span></button>
+        </div>
+    </div>
+
+    <script>
+        var Count = 0;
+        var s1, s2, s3, s4, s5, s6, s7, s8, s9, s10;
+
+        function Q1Yes() {
+            s1 = "YES";
+        }
+
+        function Q1No() {
+            s1 = "NO";
+        }
+
+        function Q2Yes() {
+            s2 = "YES";
+        }
+
+        function Q2No() {
+            s2 = "NO";
+        }
+
+        function Q3Yes() {
+            s3 = "YES";
+        }
+
+        function Q3No() {
+            s3 = "NO";
+        }
+
+        function Q4Yes() {
+            s4 = "YES";
+        }
+
+        function Q4No() {
+            s4 = "NO";
+        }
+
+        function Q5Yes() {
+            s5 = "YES";
+        }
+
+        function Q5No() {
+            s5 = "NO";
+        }
+
+        function Q6Yes() {
+            s6 = "YES";
+        }
+
+        function Q6No() {
+            s6 = "NO";
+        }
+
+        function Q7Yes() {
+            s7 = "YES";
+        }
+
+        function Q7No() {
+            s7 = "NO";
+        }
+
+        function Q8Yes() {
+            s8 = "YES";
+        }
+
+        function Q8No() {
+            s8 = "NO";
+        }
+
+        function Q9Yes() {
+            s9 = "YES";
+        }
+
+        function Q9No() {
+            s9 = "NO";
+        }
+
+        function Q10Yes() {
+            s10 = "YES";
+        }
+
+        function Q10No() {
+            s10 = "NO";
+        }
+
+        function print() {
+            if (s1 == "YES") {
+                Count = Count + 1;
+            }
+            if (s2 == "YES") {
+                Count = Count + 1;
+            }
+            if (s3 == "YES") {
+                Count = Count + 1;
+            }
+            if (s4 == "YES") {
+                Count = Count + 1;
+            }
+            if (s5 == "YES") {
+                Count = Count + 1;
+            }
+            if (s6 == "YES") {
+                Count = Count + 1;
+            }
+            if (s7 == "YES") {
+                Count = Count + 1;
+            }
+            if (s8 == "YES") {
+                Count = Count + 1;
+            }
+            if (s9 == "YES") {
+                Count = Count + 1;
+            }
+            if (s10 == "YES") {
+                Count = Count + 1;
+            }
+            var url1 = "./Low Level.html";
+            var url2 = "./High Level.html";
+            if (Count >= 0 && Count <= 5) {
+                window.open(url1, 'newwindow');
+            }
+            if (Count > 5 && Count <= 10) {
+                window.open(url2, 'newwindow');
+            }
+            Count = 0;
+        }
+    </script>
+</body>
+
+</html>

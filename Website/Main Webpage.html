@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./(style) Main Webpage.css">
+</head>
+
+<body>
+    <div class="NavBar">
+        <a href="./Main Webpage.html">Home</a>
+        <a href="./Music/music.html">Music</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <video autoplay muted loop>
+        <source src="./Background Video/Background video.mp4" type="video/mp4">
+    </video>
+
+    <div class="Project">
+        <p class="Title">MIND BOOSTER</p>
+
+        <div class="Choice">
+            <button onclick="AssignWebpage('./Family Affairs/Family Affairs.html')" class="button-64" role="button" id="b1"><span class="text">Family Affairs</span></button>
+            <button onclick="AssignWebpage('./Friendship Issue/Friendship Issue.html')" class="button-64" role="button" id="b4"><span class="text">Friendship Issue</span></button>
+        </div>
+        <div class="Choice">
+            <button onclick="AssignWebpage('./Jealousy/Jealousy.html')" class="button-64" role="button" id="b3"><span class="text">Jealousy</span></button>
+            <button onclick="AssignWebpage('./Study Motivation/Study Motivation.html')" class="button-64" role="button" id="b4"><span class="text">Study Motivation</span></button>
+        </div>
+        <div class="Choice">
+            <button onclick="AssignWebpage('./Addiction/Addiction.html')" class="button-64" role="button" id="b5"><span class="text">Addiction</span></button>
+            <button onclick="AssignWebpage('./Risk Anxiety/Risk Anxiety.html')" class="button-64" role="button" id="b6"><span class="text">Risk Anxiety</span></button>
+        </div>
+
+        <button onclick="window.location.href=WebsiteName;" class="Get">Get Started</button>
+    </div>
+
+    <script>
+        var WebsiteName;
+
+        function AssignWebpage(WebName) {
+            WebsiteName = WebName;
+            console.log(WebsiteName);
+        }
+    </script>
+</body>
+
+</html>
